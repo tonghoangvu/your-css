@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your-css</title>
+
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="css/sizes.css">
+
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/utils.css">
+
+    <script src="js/config.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body class="m1">
+    <div class="mb2">
+        <h1 class="text-primary">
+            Heading 1<span class="ml1 spinner"></span>
+        </h1>
+        <h2 class="text-bold">Heading 2</h2>
+        <h3 class="text-normal">Heading 3</h3>
+        <hr>
+        <h4 class="text-thin">Heading 4</h4>
+        <h5 class="text-gray">Heading 5</h5>
+        <h6>Heading 6</h6>
+    </div>
+
+    <div class="mb2">
+        <input type="range" id="range-font-size" min="10" max="50">
+        <label id="text-font-size">Base font size: ?px</label>
+
+        <select id="select-primary-color">
+            <option value="blue" selected>Blue</option>
+            <option value="indigo">Indigo</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="teal">Teal</option>
+            <option value="cyan">Cyan</option>
+        </select>
+        <label>Primary color</label>
+
+        <button id="button-switch-theme">Switch theme</button>
+    </div>
+
+    <div class="mb2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Saepe culpa nemo praesentium qui consectetur eius maiores
+            doloribus cupiditate, eum amet veniam <kbd>Ctrl+V</kbd>
+            similique voluptas quos! Reprehenderit veniam at ea veritatis.
+            <a href="">Blank link</a>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <kbd>Ctrl+C</kbd> culpa nemo praesentium qui consectetur eius maiores
+            doloribus cupiditate, eum amet veniam asperiores similique
+            voluptas quos! Reprehenderit veniam at ea veritatis.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Saepe culpa nemo praesentium qui consectetur eius maiores
+            doloribus cupiditate, eum amet veniam asperiores similique
+            voluptas quos! Reprehenderit veniam at ea veritatis.
+        </p>
+    </div>
+
+    <div class="mb2">
+        <details>
+            <summary>Click to show hidden content</summary>
+            <div class="fix">
+                <p class="m0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe culpa nemo praesentium qui consectetur eius maiores
+                    doloribus cupiditate, eum amet veniam asperiores similique
+                    voluptas quos! Reprehenderit veniam at ea veritatis.
+                </p>
+            </div>
+        </details>
+    </div>
+
+    <div class="mb2">
+        <blockquote class="no-select">
+            Where did I go wrong?<br>
+            I lost a friend<br>
+            Somewhere along in the bitterness<br>
+            And I would have stayed up with you all night<br>
+            Had I known how to save a life...
+        </blockquote>
+    </div>
+
+    <div class="mb2">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center">1</td>
+                    <td>Tong Hoang Vu</td>
+                    <td style="text-align: center">20</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">1</td>
+                    <td>John Doe</td>
+                    <td style="text-align: center">25</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mb2">
+        <input type="text" placeholder="Text input">
+        <button>Button</button>
+    </div>
+
+    <div class="mb2">
+        <input type="checkbox" id="unemployed">
+        <label for="unemployed">Are you unemployeed?</label>
+        <br>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+    </div>
+
+    <div class="mb2">
+        <input type="image" src="img/love.png" alt="">
+        <input type="range">
+        <progress></progress>
+        <input type="file">
+    </div>
+
+    <div class="mb2">
+        <input type="button" value="Button now">
+        <input type="reset" value="Reset now">
+        <input type="submit" value="Submit now">
+    </div>
+
+    <div class="mb2">
+        <input type="text" placeholder="Text input">
+        <input type="number" placeholder="Number input">
+        <input type="password" placeholder="Password input">
+        <input type="email" placeholder="Email input">
+    </div>
+
+    <div class="mb2">
+        <input type="search" placeholder="Search input">
+        <input type="tel" placeholder="Tel input">
+        <input type="url" placeholder="URL input">
+        <input type="hidden" title="Hidden input">
+    </div>
+
+    <div class="mb2">
+        <input type="date" title="Date input">
+        <input type="datetime-local" title="Datetime-local input">
+        <input type="datetime" placeholder="Datetime input">
+    </div>
+
+    <div class="mb2">
+        <input type="time" title="Time input">
+        <input type="week" title="Week input">
+        <input type="month" title="Month input">
+        <select>
+            <option selected disabled>Select</option>
+            <optgroup label="Group option">
+                <option>Option 1</option>
+                <option>Option 2</option>
+            </optgroup>
+            <option>Option 3</option>
+            <option>Option 4</option>
+        </select>
+    </div>
+
+    <div class="mb2">
+        <textarea cols="60" rows="10" placeholder="Description"></textarea>
+    </div>
+
+    <div class="mb2">
+        <a href="#"><button>Scroll to top</button></a>
+    </div>
+</body>
+</html>

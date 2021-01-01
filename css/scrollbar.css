@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+    width: var(--default-spacing);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: var(--rounded-border-radius);
+    background: var(--background-gray-2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--background-gray-1);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--background-gray);
+}
