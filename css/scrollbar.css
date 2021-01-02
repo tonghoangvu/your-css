@@ -1,5 +1,6 @@
 ::-webkit-scrollbar {
     width: var(--default-spacing);
+    height: var(--default-spacing);
 }
 
 ::-webkit-scrollbar-button {
