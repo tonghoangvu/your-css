@@ -1,6 +1,4 @@
-.no-select {
-    user-select: none;
-}
+.no-select { user-select: none; }
 
 .clearfix::after {
     content: "";
@@ -8,10 +6,5 @@
     display: block;
 }
 
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
+.float-left { float: left; }
+.float-right { float: right; }

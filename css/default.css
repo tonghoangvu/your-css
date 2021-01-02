@@ -63,16 +63,16 @@ input[type="submit"] {
     background-color: var(--primary-color);
     padding: var(--default-spacing)
         calc(var(--default-spacing) + 2 * var(--default-thickness));
+    transition: background-color
+        var(--default-transition-duration)
+        var(--default-transition-function);
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    transition: background-color
-        var(--default-transition-duration)
-        var(--default-transition-function);
-    background: var(--primary-color-1);
+    background-color: var(--primary-color-1);
 }
 
 button:active, button:focus,
@@ -99,7 +99,7 @@ input[type="url"],
 input[type="week"],
 input[type="tel"],
 input[type="search"] {
-    background: transparent;
+    background-color: transparent;
     border-radius: var(--default-border-radius);
     border: var(--default-thickness) solid var(--background-color-2);
     padding: calc(var(--default-spacing) - var(--default-thickness));
@@ -230,7 +230,7 @@ input, textarea, button, select, a {
 }
 
 ::selection {
-    background: var(--primary-transparent-1);
+    background-color: var(--primary-transparent-1);
 }
 
 ::-webkit-datetime-edit-ampm-field:focus,
@@ -243,5 +243,5 @@ input, textarea, button, select, a {
 ::-webkit-datetime-edit-month-field:focus,
 ::-webkit-datetime-edit-year-field:focus,
 ::-webkit-datetime-edit-text:focus {
-    background: var(--primary-transparent-1);
+    background-color: var(--primary-transparent-1);
 }

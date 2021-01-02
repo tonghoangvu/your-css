@@ -3,6 +3,7 @@ const defaultConfig = {
 
     '--small-spacing': '0.25rem',
     '--default-spacing': '0.5rem',
+    '--large-spacing': '0.6rem',
 
     '--default-line-height': 1.8,
     '--block-line-height': 2.4,

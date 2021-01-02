@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
-    width: var(--default-spacing);
-    height: var(--default-spacing);
+    width: var(--large-spacing);
+    height: var(--large-spacing);
 }
 
 ::-webkit-scrollbar-button {
@@ -8,22 +8,22 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-corner {
-    background: transparent;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: var(--rounded-border-radius);
-    background: var(--background-gray-2);
+    background-color: var(--background-gray-2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--background-gray-1);
+    background-color: var(--background-gray-1);
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: var(--background-gray);
+    background-color: var(--background-gray);
 }
