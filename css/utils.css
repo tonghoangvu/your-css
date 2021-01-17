@@ -1,6 +1,10 @@
-.no-select {
-    user-select: none;
-}
+.no-select { user-select: none; }
+
+.no-wrap { white-space: nowrap; }
+
+.no-focus-outline:focus { outline: none; }
+
+.cursor-pointer { cursor: pointer; }
 
 .clearfix::after {
     content: "";
