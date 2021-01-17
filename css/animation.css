@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 * {
     transition-property: color, background-color, border-color;
     transition-duration: var(--fast-transition-duration);

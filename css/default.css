@@ -5,6 +5,8 @@
         'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html { scroll-behavior: smooth; }
+
 html, body, p, button, input, textarea, select {
     font-size: var(--base-font-size);
     font-weight: var(--normal-font-weight);
