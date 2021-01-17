@@ -61,28 +61,12 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
     color: var(--text-color-on-solid);
     background-color: var(--primary-color);
     padding:
         var(--default-spacing)
         calc(var(--default-spacing) + 2 * var(--default-thickness));
     transition: background-color
-        var(--default-transition-duration)
-        var(--default-transition-function);
-    -webkit-transition: background-color
-        var(--default-transition-duration)
-        var(--default-transition-function);
-    -moz-transition: background-color
-        var(--default-transition-duration)
-        var(--default-transition-function);
-    -ms-transition: background-color
-        var(--default-transition-duration)
-        var(--default-transition-function);
-    -o-transition: background-color
         var(--default-transition-duration)
         var(--default-transition-function);
 }
@@ -120,10 +104,6 @@ input[type="tel"],
 input[type="search"] {
     background-color: transparent;
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
     border: var(--default-thickness) solid var(--background-color-2);
     padding: calc(var(--default-spacing) - var(--default-thickness));
 }
@@ -164,7 +144,6 @@ input[type="image"]:focus {
 
 input[type="number"]::-webkit-inner-spin-button {
     appearance: none;
-    -webkit-appearance: none;
 }
 
 input[type="time"]::-webkit-calendar-picker-indicator,
@@ -173,7 +152,6 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator,
 input[type="week"]::-webkit-calendar-picker-indicator,
 input[type="month"]::-webkit-calendar-picker-indicator {
     filter: invert(0.5);
-    -webkit-filter: invert(0.5);
 }
 
 /* TABLE */
@@ -203,10 +181,6 @@ th {
 details {
     background-color: var(--background-color-1);
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
 }
 
 summary {
@@ -215,10 +189,6 @@ summary {
     background-color: var(--background-color-1);
     padding: var(--default-spacing);
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
 }
 
 summary:focus {
@@ -243,10 +213,6 @@ kbd {
     color: var(--text-reverse-1);
     background-color: var(--background-reverse-1);
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
 }
 
 b, strong {
@@ -266,11 +232,11 @@ input, textarea, button, select, a {
     -webkit-tap-highlight-color: transparent;
 }
 
-::-moz-selection {
+::selection {
     background-color: var(--primary-transparent-1);
 }
 
-::selection {
+::-moz-selection {
     background-color: var(--primary-transparent-1);
 }
 
