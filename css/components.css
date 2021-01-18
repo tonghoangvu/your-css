@@ -1,12 +1,14 @@
-.back-to-top {
-    font-size: 2rem;
-    border: solid var(--primary-color);
-    border-width: 0 var(--bold-thickness) var(--bold-thickness) 0;
+.back-to-top, .back-to-top:hover {
+    all: unset;
     display: inline-block;
-    padding: 0.75rem;
+    cursor: pointer;
     position: fixed;
     right: 2rem;
     bottom: 2rem;
+    font-size: 2rem;
+    padding: 0.75rem;
+    border: solid var(--primary-color);
+    border-width: 0 var(--bold-thickness) var(--bold-thickness) 0;
     transform: rotate(-135deg);
 }
 
@@ -21,11 +23,6 @@
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
