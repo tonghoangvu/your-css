@@ -24,10 +24,10 @@
 
 /* MARGIN AUTO */
 
-.mta { margin-top: auto; }
-.mla { margin-left: auto; }
-.mra { margin-right: auto; }
-.mba { margin-bottom: auto; }
+.mta { margin-top: auto !important; }
+.mla { margin-left: auto !important; }
+.mra { margin-right: auto !important; }
+.mba { margin-bottom: auto !important; }
 
 /* MARGIN ALL */
 
