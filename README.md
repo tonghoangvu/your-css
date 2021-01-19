@@ -1,4 +1,5 @@
 # your-css
+
 A simple CSS library for you
 
 ### Introduction
@@ -9,24 +10,4 @@ Try my CSS library, it's very simple and easy to use. Just include minified CSS 
 
 ### How to use?
 
-Using NPM or Yarn to install dev dependencies:
-
-```
-npm install
-yarn install
-```
-
-And run following command to build production
-
-```
-npm run build
-yarn run build
-```
-
-### Recommended VSCode extensions
-
-For this project, I have used some extensions:
-
-* [Autoprefixer](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer)
-* [css-auto-prefix](https://marketplace.visualstudio.com/items?itemName=sporiley.css-auto-prefix)
-* [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+Just clone this repository and open `index.html` file (via browser or Live server).
