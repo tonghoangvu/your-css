@@ -18,10 +18,6 @@
 ::-webkit-scrollbar-thumb {
     background-color: var(--background-gray-2);
     border-radius: var(--rounded-border-radius);
-    -webkit-border-radius: var(--rounded-border-radius);
-    -moz-border-radius: var(--rounded-border-radius);
-    -ms-border-radius: var(--rounded-border-radius);
-    -o-border-radius: var(--rounded-border-radius);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -29,5 +25,5 @@
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: var(--background-gray);
+    background-color: var(--background-gray-0);
 }

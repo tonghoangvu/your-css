@@ -5,6 +5,8 @@
         'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html { scroll-behavior: smooth; }
+
 html, body, p, button, input, textarea, select {
     font-size: var(--base-font-size);
     font-weight: var(--normal-font-weight);
@@ -13,14 +15,14 @@ html, body, p, button, input, textarea, select {
 body {
     margin: 0;
     line-height: var(--default-line-height);
-    background-color: var(--background-color);
+    background-color: var(--background-color-1);
 }
 
 /* HEADINGS */
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 var(--default-spacing) 0;
-    color: var(--text-color);
+    color: var(--text-color-0);
     font-weight: var(--semibold-font-weight);
 }
 
@@ -33,16 +35,14 @@ h6 { font-size: 1rem; }
 
 /* PARAGRAPH */
 
-p {
-    margin: 0 0 var(--default-spacing) 0;
-}
+p { margin: 0 0 var(--default-spacing) 0; }
 
 /* LINK */
 
 a {
     cursor: pointer;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--primary-color-0);
 }
 
 a:hover {
@@ -59,28 +59,12 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
     color: var(--text-color-on-solid);
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-0);
     padding:
         var(--default-spacing)
         calc(var(--default-spacing) + 2 * var(--default-thickness));
     transition: background-color
-        var(--default-transition-duration)
-        var(--default-transition-function);
-    -webkit-transition: background-color
-        var(--default-transition-duration)
-        var(--default-transition-function);
-    -moz-transition: background-color
-        var(--default-transition-duration)
-        var(--default-transition-function);
-    -ms-transition: background-color
-        var(--default-transition-duration)
-        var(--default-transition-function);
-    -o-transition: background-color
         var(--default-transition-duration)
         var(--default-transition-function);
 }
@@ -92,17 +76,22 @@ input[type="submit"]:hover {
     background-color: var(--primary-color-1);
 }
 
-button:active, button:focus,
-input[type="button"]:active, input[type="button"]:focus,
-input[type="reset"]:active, input[type="reset"]:focus,
-input[type="submit"]:active, input[type="submit"]:focus {
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
     outline: none;
     box-shadow: 0 0 0 var(--bold-thickness) var(--primary-transparent-1);
 }
 
 /* TEXTBOX, TEXTAREA */
 
-textarea, select,
+textarea,
+select,
 input[type="text"],
 input[type="number"],
 input[type="password"],
@@ -118,15 +107,12 @@ input[type="tel"],
 input[type="search"] {
     background-color: transparent;
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
-    border: var(--default-thickness) solid var(--background-color-2);
+    border: var(--default-thickness) solid var(--background-gray-2);
     padding: calc(var(--default-spacing) - var(--default-thickness));
 }
 
-textarea:focus, select:focus,
+textarea:focus,
+select:focus,
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="password"]:focus,
@@ -141,7 +127,7 @@ input[type="week"]:focus,
 input[type="tel"]:focus,
 input[type="search"]:focus {
     outline: none;
-    border: var(--default-thickness) solid var(--primary-color);
+    border: var(--default-thickness) solid var(--primary-color-0);
 }
 
 /* OTHER INPUT */
@@ -160,25 +146,9 @@ input[type="image"]:focus {
     outline: none;
 }
 
-input[type="number"]::-webkit-inner-spin-button {
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-input[type="time"]::-webkit-calendar-picker-indicator,
-input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="datetime-local"]::-webkit-calendar-picker-indicator,
-input[type="week"]::-webkit-calendar-picker-indicator,
-input[type="month"]::-webkit-calendar-picker-indicator {
-    filter: invert(0.5);
-    -webkit-filter: invert(0.5);
-}
-
 /* TABLE */
 
-table {
-    border-collapse: collapse;
-}
+table { border-collapse: collapse; }
 
 tr, th, td {
     border: var(--thin-thickness) solid var(--background-gray-2);
@@ -188,50 +158,40 @@ th, td {
     padding: var(--small-spacing) var(--default-spacing);
 }
 
-tbody > tr:nth-child(odd) {
-    background-color: var(--background-color-1);
-}
-
 th {
     font-weight: var(--semibold-font-weight);
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: var(--background-color-2);
 }
 
 /* DETAILS & SUMMARY */
 
 details {
-    background-color: var(--background-color-1);
+    background-color: var(--background-color-2);
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
 }
 
 summary {
     border: none;
     cursor: pointer;
-    background-color: var(--background-color-1);
+    background-color: var(--background-color-2);
     padding: var(--default-spacing);
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
 }
 
-summary:focus {
-    outline: none;
-}
+summary:focus { outline: none; }
 
 /* OTHERS */
 
 blockquote {
     margin: 0;
-    border-left: var(--bold-thickness) solid var(--primary-color);
+    border-left: var(--bold-thickness) solid var(--primary-color-0);
     padding:
         var(--default-spacing)
         calc(2 * var(--default-spacing) - var(--default-thickness));
-    background-color: var(--background-color-1);
+    background-color: var(--background-color-2);
 }
 
 kbd {
@@ -241,10 +201,6 @@ kbd {
     color: var(--text-reverse-1);
     background-color: var(--background-reverse-1);
     border-radius: var(--default-border-radius);
-    -webkit-border-radius: var(--default-border-radius);
-    -moz-border-radius: var(--default-border-radius);
-    -ms-border-radius: var(--default-border-radius);
-    -o-border-radius: var(--default-border-radius);
 }
 
 b, strong {
@@ -253,7 +209,7 @@ b, strong {
 
 hr {
     border: none;
-    border-top: var(--thin-thickness) solid var(--background-color-2);
+    border-top: var(--thin-thickness) solid var(--background-gray-2);
 }
 
 optgroup, option {
@@ -262,25 +218,4 @@ optgroup, option {
 
 input, textarea, button, select, a {
     -webkit-tap-highlight-color: transparent;
-}
-
-::-moz-selection {
-    background-color: var(--primary-transparent-1);
-}
-
-::selection {
-    background-color: var(--primary-transparent-1);
-}
-
-::-webkit-datetime-edit-ampm-field:focus,
-::-webkit-datetime-edit-millisecond-field:focus,
-::-webkit-datetime-edit-second-field:focus,
-::-webkit-datetime-edit-minute-field:focus,
-::-webkit-datetime-edit-hour-field:focus,
-::-webkit-datetime-edit-day-field:focus,
-::-webkit-datetime-edit-week-field:focus,
-::-webkit-datetime-edit-month-field:focus,
-::-webkit-datetime-edit-year-field:focus,
-::-webkit-datetime-edit-text:focus {
-    background-color: var(--primary-transparent-1);
 }
