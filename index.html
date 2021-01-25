@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     <script src="index.js" defer></script>
 </head>
 <body class="m1">
-    <a href="#" class="back-to-top"></a>
+    <a href="#" class="back-to-top" aria-label="Back to top"></a>
 
     <div class="mb2">
         <h1 class="text-primary">
@@ -35,9 +35,12 @@
     </div>
 
     <div class="mb2">
-        <input type="range" id="range-font-size" min="10" max="50">
         <label id="text-font-size">Base font size: ?px</label>
+        <input type="range" id="range-font-size" min="10" max="50">
+    </div>
 
+    <div class="mb2">
+        <label>Primary color</label>
         <select id="select-primary-color">
             <option value="blue" selected>Blue</option>
             <option value="indigo">Indigo</option>
@@ -50,9 +53,13 @@
             <option value="teal">Teal</option>
             <option value="cyan">Cyan</option>
         </select>
-        <label>Primary color</label>
 
-        <button id="button-switch-theme">Switch theme</button>
+        <label>Choose theme</label>
+        <select id="select-theme">
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
     </div>
 
     <div class="mb2">
@@ -139,7 +146,7 @@
     </div>
 
     <div class="mb2">
-        <input type="image" src="img/love.png" alt="">
+        <input type="image" src="img/love.png" alt="Love">
         <input type="range">
         <progress></progress>
         <input type="file">
@@ -188,10 +195,6 @@
 
     <div class="mb2">
         <textarea cols="60" rows="10" placeholder="Description"></textarea>
-    </div>
-
-    <div class="mb2">
-        <a href="#"><button>Scroll to top</button></a>
     </div>
 </body>
 </html>
