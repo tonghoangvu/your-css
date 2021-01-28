@@ -143,3 +143,11 @@ function setSystemThemeListener(reloadFunction) {
     window.matchMedia('(prefers-color-scheme: dark)')
         .addEventListener('change', reloadFunction);
 }
+
+function setPrimaryColor(themeConfig, primaryColor) {
+    modifyConfig(themeConfig, {
+        '--base-color-0': 'var(--' + primaryColor + '-500)',
+        '--base-color-1': 'var(--' + primaryColor + '-600)',
+        '--base-color-2': 'var(--' + primaryColor + '-700)',
+    });
+}

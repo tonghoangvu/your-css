@@ -76,16 +76,8 @@ function reloadFontSize() {
 }
 
 function reloadPrimaryColor() {
-    modifyConfig(lightTheme, {
-        '--base-color-0': 'var(--' + config.primaryColor + '-500)',
-        '--base-color-1': 'var(--' + config.primaryColor + '-600)',
-        '--base-color-2': 'var(--' + config.primaryColor + '-700)',
-    });
-    modifyConfig(darkTheme, {
-        '--base-color-0': 'var(--' + config.primaryColor + '-500)',
-        '--base-color-1': 'var(--' + config.primaryColor + '-400)',
-        '--base-color-2': 'var(--' + config.primaryColor + '-300)',
-    });
+    setPrimaryColor(lightTheme, config.primaryColor);
+    setPrimaryColor(darkTheme, config.primaryColor);
     selectOptionByValue(selectPrimaryColor, config.primaryColor);
 }
 
